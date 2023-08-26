@@ -1,4 +1,4 @@
-package dev.patricksilva.crud.view.controller;
+package dev.spring_handsOn.crud.view.controller;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -24,12 +24,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import dev.patricksilva.crud.services.ProductService;
-import dev.patricksilva.crud.shared.ProductDTO;
-import dev.patricksilva.crud.view.model.ProductRequest;
-import dev.patricksilva.crud.view.model.ProductResponse;
-import dev.patricksilva.crud_Helper.CSVHelper;
-import dev.patricksilva.crud_message.ResponseMessage;
+import dev.spring_handsOn.crud.services.ProductService;
+import dev.spring_handsOn.crud.shared.ProductDTO;
+import dev.spring_handsOn.crud.view.model.ProductRequest;
+import dev.spring_handsOn.crud.view.model.ProductResponse;
+import dev.spring_handsOn.crud_Helper.CSVHelper;
+import dev.spring_handsOn.crud_message.ResponseMessage;
 
 @RestController
 @RequestMapping("/api/products")

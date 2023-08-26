@@ -1,4 +1,4 @@
-package dev.patricksilva.crud_message;
+package dev.spring_handsOn.crud_message;
 
 public class ResponseMessage {
 	

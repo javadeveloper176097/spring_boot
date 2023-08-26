@@ -1,12 +1,8 @@
-package dev.patricksilva.crud.model;
+package dev.spring_handsOn.crud.shared;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import java.util.UUID;
 
-@Entity
-public class Product {
+public class ProductDTO {
     private Integer id;
     private String uuid;
     private String name;
@@ -14,25 +10,7 @@ public class Product {
     private Double price;
     private String observation;
     private String Currency;
-    
-    
-    public Product() {   	
-    }
-    
-    public Product(Integer id, String uuid, String name, Integer quantity, Double price, String observation,
-			String currency) {
-		super();
-		this.id = id;
-		this.uuid = uuid;
-		this.name = name;
-		this.quantity = quantity;
-		this.price = price;
-		this.observation = observation;
-		Currency = currency;
-	}
 
-	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     // #region Getters and Setters
     public Integer getId() {
         return id;
@@ -50,7 +28,7 @@ public class Product {
 		this.uuid = uuid;
 	}
 
-	public String getName() {
+    public String getName() {
         return name;
     }
 
@@ -90,13 +68,7 @@ public class Product {
 		Currency = currency;
 	}
 
-	@Override
-	public String toString() {
-		return "Product [id=" + id + ", uuid=" + uuid + ", name=" + name + ", quantity=" + quantity + ", price=" + price
-				+ ", observation=" + observation + ", Currency=" + Currency + "]";
-	}
-
-
-
+	
+	
     // #endregion
 }

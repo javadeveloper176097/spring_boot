@@ -1,4 +1,4 @@
-package dev.patricksilva.crud.view.model;
+package dev.spring_handsOn.crud.view.model;
 
 public class ProductRequest {
     private String name;

@@ -1,4 +1,4 @@
-package dev.patricksilva.crud_Helper;
+package dev.spring_handsOn.crud_Helper;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.web.multipart.MultipartFile;
 
-import dev.patricksilva.crud.model.Product;
+import dev.spring_handsOn.crud.model.Product;
 
 public class CSVHelper {
 	

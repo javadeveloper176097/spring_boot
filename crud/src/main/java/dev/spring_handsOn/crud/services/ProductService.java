@@ -1,4 +1,4 @@
-package dev.patricksilva.crud.services;
+package dev.spring_handsOn.crud.services;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -12,12 +12,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import dev.patricksilva.crud.model.Product;
-import dev.patricksilva.crud.model.exception.ResourceNotFoundException;
-import dev.patricksilva.crud.repository.ProductRepository;
-import dev.patricksilva.crud.shared.ProductDTO;
-import dev.patricksilva.crud_Helper.CSVHelper;
-import dev.patricksilva.crud_Helper.CSVHelperDownload;
+import dev.spring_handsOn.crud.model.Product;
+import dev.spring_handsOn.crud.model.exception.ResourceNotFoundException;
+import dev.spring_handsOn.crud.repository.ProductRepository;
+import dev.spring_handsOn.crud.shared.ProductDTO;
+import dev.spring_handsOn.crud_Helper.CSVHelper;
+import dev.spring_handsOn.crud_Helper.CSVHelperDownload;
 
 @Service
 public class ProductService {

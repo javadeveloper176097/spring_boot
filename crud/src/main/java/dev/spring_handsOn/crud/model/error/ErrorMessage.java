@@ -1,4 +1,4 @@
-package dev.patricksilva.crud.model.error;
+package dev.spring_handsOn.crud.model.error;
 
 public class ErrorMessage {
     private String title;

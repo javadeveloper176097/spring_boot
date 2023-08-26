@@ -1,4 +1,4 @@
-package dev.patricksilva.crud_Helper;
+package dev.spring_handsOn.crud_Helper;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -11,7 +11,7 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.QuoteMode;
 
-import dev.patricksilva.crud.model.Product;
+import dev.spring_handsOn.crud.model.Product;
 
 public class CSVHelperDownload {
 	

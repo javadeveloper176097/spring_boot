@@ -1,4 +1,4 @@
-package dev.patricksilva.crud;
+package dev.spring_handsOn.crud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package dev.patricksilva.crud;
+package dev.spring_handsOn.crud;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.multipart.MaxUploadSizeExceededException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import dev.patricksilva.crud_message.ResponseMessage;
+import dev.spring_handsOn.crud_message.ResponseMessage;
 
 @ControllerAdvice
 public class FileUploadExceptionAdvice extends ResponseEntityExceptionHandler {
