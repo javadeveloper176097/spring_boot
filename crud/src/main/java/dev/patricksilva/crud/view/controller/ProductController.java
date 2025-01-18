@@ -38,6 +38,7 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 
+	//Get the list of products
 	@GetMapping
 	public ResponseEntity<List<ProductResponse>> findAll() {
 
@@ -51,6 +52,7 @@ public class ProductController {
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
+	// Get particular product by Id
 	@GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<Optional<ProductResponse>> findById(@PathVariable Integer id) {
 
@@ -61,6 +63,7 @@ public class ProductController {
 		return new ResponseEntity<>(Optional.of(product), HttpStatus.OK);
 	}
 
+	// Add new product
 	@PostMapping
 	public ResponseEntity<ProductResponse> addProduct(@RequestBody ProductRequest productRequest) {
 
@@ -73,6 +76,7 @@ public class ProductController {
 		return new ResponseEntity<>(mapper.map(productDTO, ProductResponse.class), HttpStatus.CREATED);
 	}
 
+	// delete the product
 	@DeleteMapping(value = "/{id}", produces = MediaType.APPLICATION_XML_VALUE)
 	public ResponseEntity<?> delete(@PathVariable Integer id) {
 		productService.delete(id);
@@ -80,6 +84,7 @@ public class ProductController {
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 
+	// udpate particular product with Id
 	@PutMapping("/{id}")
 	public ResponseEntity<ProductResponse> update(@RequestBody ProductRequest productRequest,
 			@PathVariable Integer id) {
@@ -91,8 +96,7 @@ public class ProductController {
 
 		return new ResponseEntity<>(mapper.map(productDTO, ProductResponse.class), HttpStatus.OK);
 	}
-	// file upload
-
+	// file upload to upload the bunch of product at onetime
 	@PostMapping("/upload")
 	public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
 		String message = "";
