@@ -96,7 +96,8 @@ public class ProductController {
 
 		return new ResponseEntity<>(mapper.map(productDTO, ProductResponse.class), HttpStatus.OK);
 	}
-	// file upload to upload the bunch of product at onetime
+	// file upload
+
 	@PostMapping("/upload")
 	public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
 		String message = "";
